@@ -85,22 +85,36 @@
     <!-- Two -->
     <section id="two" class="wrapper alt style2">
         <section class="spotlight">
-            <div class="image"><img src="images/pic01.jpg" alt=""/></div>
+            <div class="image"><img src="images/low_rank_manifold_big_formula.png"
+                                    alt="Illustration of a low-rank manifold of neural network weights."/></div>
             <div class="content">
                 <h2>Dynamical Low Rank Training <br/>
                     for deep neural networks
                     <span class="icons">
                         <a href="https://github.com/CSMMLab/DLRANet" class="icon brands fa-github"><span class="label">Github</span></a>
                     </span></h2>
-                <p>How to enable automatic model compression during training without additional computational expense?
-                    We leverage low rank dynamical systems
-                    to create factorized neural networks with low memory footprint, and fast inference and training
-                    times.
+                <p>
+                    Neural networks have achieved tremendous success in a large variety of applications. However, their
+                    memory footprint and computational demand can render them impractical in application settings with
+                    limited hardware or energy resources. <br>
+                    We propose a novel algorithm to find efficient
+                    low-rank subnetworks. Remarkably, these subnetworks are determined and adapted already during the
+                    training phase and the overall time and memory resources required by both training and evaluating
+                    them are significantly reduced.
+                </p>
+                <p>
+                    This project is has been presented at the <a
+                        href="https://nips.cc/media/neurips-2022/Slides/53825_SZbm58f.pdf">NeurIPS Conference 2022 in
+                    New Orleans, LA</a>.
                 </p>
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="images/checkerboard_m1_neural_log.png" alt="Nuclear Simulation"/></div>
+            <div class="image"><img src="images/checkerboard_M3.png"
+                                    alt="Simulation of a radiation source with graphite shielding in a checkerboard pattern."/>
+            </div>
+            <div class="image"><img src="images/CSD_MN_radCT.png"
+                                    alt="Simulation of the radiation dose of cancer tissue near a human lung."/></div>
             <div class="content">
                 <h2>High performance simulation <br/>
                     of particle transport
@@ -109,15 +123,23 @@
                                 class="label">Github</span></a>
                     </span>
                 </h2>
-                From clean energy over aerospace to cancer treatment, fast and memory efficient simulation of radiation
-                transport is crucial.
-                We leverage structure preserving neural networks to build fast and robust surrogate models for particle
-                simulation.
-                </p><p>
-                A project of the DFG Priority Programme <a href="https://www.foundationsofdl.de">Theoretical
-                Foundations of Deep Learning</a> in coorperation with Cory Hauck of the <a
-                    href="https://www.ornl.gov/group/multiscale-methods">Oak Ridge
-                National Lab</a>.</p>
+                <p>
+                    Modern high performance simulation employs modeling on finer physical resolutions, beyond the
+                    macroscopic scale.
+                    Kinetic simulations - for safety critical applications as cancer therapy planning, or radiation
+                    shielding - need to be fas, memory efficient, but certifiable correct.
+                    We tackle this challenge using machine learning surrogate models, with provable error bounds and
+                    structural properties.
+                    The models are then embedded into the high performance simulator <a
+                        href="https://github.com/CSMMLab/KiT-RT">Kit-RT</a>.
+                </p>
+                <p>The work is presented at the <a
+                        href="https://proceedings.mlr.press/v162/schotthofer22a.html">ICML Conference 2022 in Baltimore,
+                    MD</a>. This project is fundet by the DFG Priority Programme <a
+                        href="https://www.foundationsofdl.de">Theoretical
+                    Foundations of Deep Learning</a>. The work was done in cooperation with the <a
+                        href="https://www.ornl.gov/group/multiscale-methods">Oak Ridge
+                    National Lab</a>.</p>
             </div>
         </section>
         <section class="spotlight">
@@ -129,13 +151,22 @@
                         <a href="https://github.com/CSMMLab/KiT-RT" class="icon brands fa-github"><span class="label">Github</span></a>
                     </span>
                 </h2>
-                <p>The KiT-RT (Kinetic Transport Solver for Radiation Therapy) framework is a high-performance open
-                    source C++ based platform for radiation transport.</p>
+
                 <p>
-                    Its main focus is on radiotherapy planning in cancer treatment and investigation of
+                    The main focus of the KiT-RT software suite is on radiotherapy planning for cancer treatment and
+                    investigation of
                     various research questions in the field of radiative transfer.
                     This goal is supported by an easily extendable code structure that allows for straightforward
-                    implementation of additional methods and techniques.</p>
+                    implementation of additional methods and techniques.
+                </p>
+                <p>The KiT-RT framework is a high-performance open
+                    source C++ based platform for radiation transport, available on <a
+                            href="https://github.com/CSMMLab/KiT-RT">Github</a> with documentation on <a
+                            href="https://kit-rt.readthedocs.io/en/develop/index.html">ReadTheDocs</a>. The preprint of
+                    the software-paper can
+                    be found on <a
+                            href="https://arxiv.org/abs/2205.08417">Arxiv</a>.
+                </p>
             </div>
         </section>
         <section class="spotlight">
@@ -149,13 +180,17 @@
                                 class="label">Github</span></a>
                     </span>
                 </h2>
-                <p>Gas dynamic simulations spanning multiple flow regimes are challenging. Shock regions require
-                    expensive, high resolution kinetic schemes, but are local phenomena. Affordable continuum simulation
-                    is
-                    not feasible in these shock regions.
-                    We build a physics informed neural network based detector of shock regions to enable
-                    state-of-the-art
-                    hybrid numerical simulation of difficult flow simulation.
+                <p>Gas dynamic simulations that span multiple flow regimes are a challenging problem in high-altitude
+                    aerospace, turbo-machinery and propulsion engines. Shock regions require
+                    expensive, high resolution kinetic schemes, but are local phenomena.
+                    We build a physics informed neural network based detector of shock regions using only coarse grained
+                    information. Based on this flow-regime
+                    classification, solvers with different physical resolutions are employed to enable a robust, but
+                    efficient hybrid simulation.
+                </p>
+                <p>
+                    The work is under review at the Journal of Computational Physics and the preprint is available on <a
+                        href="https://arxiv.org/abs/2203.02933">Arxiv</a>.
                 </p>
             </div>
         </section>
