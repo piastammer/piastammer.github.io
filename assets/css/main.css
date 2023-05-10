@@ -119,6 +119,7 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #49bf9d !important;
 			text-decoration: none;
+			cursor: pointer;
 		}
 
 	strong, b {
@@ -2639,8 +2640,8 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
+			margin: 0 0 2em 0;
+			width: 9.25em;
 		}
 
 /* Footer */
@@ -3220,4 +3221,5 @@ input, select, textarea {
 
 	}
 
-	#more {display: none;}
+	#more1 {display: none;}
+	#more2 {display: none;}
