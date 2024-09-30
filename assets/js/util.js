@@ -589,7 +589,7 @@
 function myFunction(nr) {
 	var dots = document.getElementById("dots"+nr);
 	var moreText = document.getElementById("more"+nr);
-	var btnText = document.getElementById("myBtn" +nr);
+	var btnText = document.getElementById("myBtn"+nr);
   
 	if (dots.style.display === "none") {
 	  dots.style.display = "inline";
